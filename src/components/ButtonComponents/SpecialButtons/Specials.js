@@ -1,7 +1,8 @@
 import React from "react";
+import {specials} from '../../../data'
 
 //import any components needed
-
+const calcSpecials = specials;
 //Import your array data to from the provided data file
 
 const Specials = () => {
@@ -15,3 +16,6 @@ const Specials = () => {
     </div>
   );
 };
+
+
+export default Specials = ["C", "=/-", "%"];
