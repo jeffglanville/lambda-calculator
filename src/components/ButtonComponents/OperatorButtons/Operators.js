@@ -3,17 +3,14 @@ import {operators} from '../../../data';
 import OperatorButton from './OperatorButton';
 
 //import any components needed
-const calcOperators = operators;
-
-
 
 const Operators = () => {
-  const [ops] = useState(calcOperators);
+  const [ops] = useState(operators);
   // STEP 2 - add the imported data to state
   return (
     <div>
       {ops.map((char, value) => {
-        return <OperatorButton key={value} operator={char} />
+        return <OperatorButton key={value} number={char} />
       })}
     </div>
   );
