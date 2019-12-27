@@ -1,5 +1,6 @@
 import React from "react";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers.js';
+import Operators from './components/ButtonComponents/OperatorButtons/Operators.js';
 import "./App.css";
 
 // STEP 4 - import the button and display components
