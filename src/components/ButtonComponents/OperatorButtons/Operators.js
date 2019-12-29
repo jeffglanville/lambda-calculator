@@ -4,8 +4,10 @@ import OperatorButton from './OperatorButton';
 
 //import any components needed
 
+const calcOperators = operators;
+
 const Operators = () => {
-  const [ops] = useState(operators);
+  const [ ops ] = useState(calcOperators);
   // STEP 2 - add the imported data to state
   return (
     <div>
