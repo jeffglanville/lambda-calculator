@@ -11,8 +11,8 @@ const Operators = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
-      {ops.map((char, value) => {
-        return <OperatorButton key={value} number={char} />
+      {ops.map((op, value) => {
+        return <OperatorButton key={value} operator={op.char} />
       })}
     </div>
   );
