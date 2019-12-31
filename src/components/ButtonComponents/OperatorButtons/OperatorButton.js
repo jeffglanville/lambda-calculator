@@ -4,7 +4,7 @@ const OperatorButton = (props) => {
 
   return (
     <>
-      <button>{props.operator}</button>
+      <button className = 'opBtn'>{props.operator}</button>
     </>
   );
 };
