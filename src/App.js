@@ -2,7 +2,7 @@ import React from "react";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers.js';
 import Operators from './components/ButtonComponents/OperatorButtons/Operators.js';
 import Specials from './components/ButtonComponents/SpecialButtons/Specials.js';
-import "./App.css";
+import "./App.scss";
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -23,10 +23,20 @@ function App() {
       <Logo />
       <Display />
 
+      <section className="mainContent">
+        <div className="col1">
+          <Specials />
+          <Numbers />
+        </div>
+        <div className="col2">
+          <Operators />
+        </div>
+      </section>
+
       <div className="App">
-      <Specials />
-      <Operators />
-      <Numbers />
+
+
+
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>

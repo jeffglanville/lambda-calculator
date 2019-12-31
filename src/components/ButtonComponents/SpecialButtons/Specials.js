@@ -11,11 +11,11 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
   const [ special ] = useState(calcSpecials);
   return (
-    <div>
+    <>
       {special.map((number, index) => {
         return<SpecialButton key={index} number={number} />
       })}
-    </div>
+    </>
   );
 };
 

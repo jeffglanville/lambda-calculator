@@ -10,11 +10,11 @@ const Operators = () => {
   const [ ops ] = useState(calcOperators);
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <>
       {ops.map((op, value) => {
         return <OperatorButton key={value} operator={op.char} />
       })}
-    </div>
+    </>
   );
 };
 

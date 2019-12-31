@@ -18,11 +18,11 @@ const Numbers = () => {
 
 	// do not make your hook setup in the return
 	return (
-		<div>
+		<>
 			 {nums.map((number, index) => {
 				return <NumberButton key={index} number={number} />;
 			})}
-		</div>
+		</>
 	);
 };
 
