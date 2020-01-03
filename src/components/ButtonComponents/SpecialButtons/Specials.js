@@ -10,10 +10,15 @@ const calcSpecials = specials;
 const Specials = () => {
   // STEP 2 - add the imported data to state
   const [ special ] = useState(calcSpecials);
+
+  const handleClick = (e) => {
+    console.log(e.target.value)
+  }
+
   return (
     <>
       {special.map((number, index) => {
-        return<SpecialButton key={index} number={number} />
+        return<SpecialButton handleClick={handleClick} key={index} name={number} value={number} number={number} />
       })}
     </>
   );

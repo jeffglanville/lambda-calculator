@@ -8,11 +8,15 @@ const calcOperators = operators;
 
 const Operators = () => {
   const [ ops ] = useState(calcOperators);
+
+  const handleClick= (e) => {
+    console.log(e.target.value)
+  }
   // STEP 2 - add the imported data to state
   return (
     <>
       {ops.map((op, value) => {
-        return <OperatorButton key={value} operator={op.char} />
+        return <OperatorButton value={op.value}  key={value} operator={op.char} handleClick={handleClick} />
       })}
     </>
   );

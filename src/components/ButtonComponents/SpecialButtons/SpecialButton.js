@@ -3,7 +3,7 @@ import React from "react";
 const SpecialButton = (props) => {
   return (
     <>
-      <button className="specbtn">{props.number}</button>
+      <button  onClick={props.handleClick} value={props.value} className="specbtn">{props.number}</button>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
     </>
   );
